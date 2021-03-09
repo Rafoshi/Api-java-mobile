@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
                 ArrayAdapter customerArrayAdapter = new ArrayAdapter<CustomerModel>(MainActivity.this, android.R.layout.simple_list_item_1, everyone);
                 list.setAdapter(customerArrayAdapter);
 
-//                Toast.makeText(MainActivity.this, everyone.toString(), Toast.LENGTH_SHORT).show();
             }
         });
     }
