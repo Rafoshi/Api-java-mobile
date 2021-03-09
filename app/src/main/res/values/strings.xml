@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">API</string>
-    <string name="btn_view">Ver Histórico</string>
+    <string name="btn_view">Salvar</string>
     <string name="btn_search">Pesquisar</string>
     <string name="plain_word">Digite aqui:</string>
     <string name="list_view"></string>
+    <string name="btn_all">Listar Pesquisas</string>
 </resources>
