@@ -10,6 +10,7 @@
         android:id="@+id/editTextWord"
         android:layout_width="346dp"
         android:layout_height="45dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/plain_word"
         android:inputType="textPersonName"
@@ -18,8 +19,7 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.142" />
 
     <Button
         android:id="@+id/btnView"
@@ -56,12 +56,33 @@
 
     <ListView
         android:id="@+id/list"
-        android:layout_width="410dp"
-        android:layout_height="306dp"
+        android:layout_width="360dp"
+        android:layout_height="303dp"
         android:layout_marginTop="284dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextWord" />
+
+    <Button
+        android:id="@+id/btnOxford"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#31B355"
+        android:backgroundTint="#00F4F2F2"
+        android:shadowColor="#00FFFFFF"
+        android:text="@string/btnOxford"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#000000"
+        android:textColorHighlight="#D82222"
+        android:textColorHint="#D54343"
+        android:textColorLink="#B33F3F"
+        app:iconTint="#A81212"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#706C6C"
+        app:strokeColor="#F1F1F1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
