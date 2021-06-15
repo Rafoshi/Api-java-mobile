@@ -5,4 +5,7 @@
     <string name="plain_word">Digite aqui:</string>
     <string name="list_view"></string>
     <string name="btn_all">Listar Pesquisas</string>
+    <string name="btn_delete">Deletar dados</string>
+    <string name="btnOxford">Ver localização de Oxford</string>
+    <string name="title_activity_oxford_location">Map</string>
 </resources>
