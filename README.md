@@ -29,3 +29,5 @@ Site da Oxford Dictinary API [OxfordAPI](https://developer.oxforddictionaries.co
 1. Download the code.
 2. Open the code in Android Studio.
 3. Run the app.
+
+App criado por Gustavo Del e Rafael Ioshi.
