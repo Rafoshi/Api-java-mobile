@@ -72,6 +72,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, OxfordLocation.class);
                 startActivity(intent);
+            }
+        });
 
         SM = (SensorManager) getSystemService(SENSOR_SERVICE);
         mySensor = SM.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
