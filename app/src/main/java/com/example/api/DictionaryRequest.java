@@ -60,6 +60,8 @@ public class DictionaryRequest extends AsyncTask<String,Integer,String> {
         super.onPostExecute(s);
 
         String def;
+        String def2;
+
         try{
             JSONObject js = new JSONObject(s);
             JSONArray results = js.getJSONArray("results");
@@ -79,6 +81,33 @@ public class DictionaryRequest extends AsyncTask<String,Integer,String> {
             def = de.getString(0);
 
             Toast.makeText(context, def, Toast.LENGTH_SHORT).show();
+
+        }catch(JSONException e){
+            e.printStackTrace();
+        }
+
+        try{
+            JSONObject js = new JSONObject(s);
+            JSONArray results = js.getJSONArray("results");
+
+            JSONObject lEntries = results.getJSONObject(0);
+            JSONArray laArray = lEntries.getJSONArray("lexicalEntries");
+
+            JSONObject entries = laArray.getJSONObject(0);
+            JSONArray e = entries.getJSONArray("entries");
+
+            JSONObject jsonObject = e.getJSONObject(0);
+            JSONArray sensesArray = jsonObject.getJSONArray("senses");
+
+            JSONObject d = sensesArray.getJSONObject(0);
+            JSONArray de = d.getJSONArray("subsenses");
+
+            JSONObject aa = de.getJSONObject(0);
+            JSONArray deee = aa.getJSONArray("definitions");
+
+            def2 = deee.getString(0);
+
+            Toast.makeText(context, def2, Toast.LENGTH_SHORT).show();
 
         }catch(JSONException e){
             e.printStackTrace();
