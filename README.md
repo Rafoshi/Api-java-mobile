@@ -23,6 +23,11 @@ Um App de dicionário, ele utiliza a API de oxford como base de dados, usa senso
 
 Site da Oxford Dictinary API [OxfordAPI](https://developer.oxforddictionaries.com/).
 
+---------------
+Vídeo do App [Vídeo](https://youtu.be/wPtXcP1nCEM).
+
+
+
 ▶ Como utilizar a App
 ---------------
 
