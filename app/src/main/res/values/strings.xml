@@ -8,4 +8,15 @@
     <string name="btn_delete">Deletar dados</string>
     <string name="btnOxford">Ver localização de Oxford</string>
     <string name="title_activity_oxford_location">Map</string>
+    <string name="btnOther">Mostrar Outros</string>
+    <string name="txt_resultapi">
+      definitions: based on or in accordance with reason or logic</string>
+    <string name="txt_r2">subsenses: endowed with the capacity to reason</string>
+    <string name="txt_r3">lexicalCategory: Adjective</string>
+    <string name="txt_r4">definitions: food made of flour, water, and yeast mixed together and baked</string>
+    <string name="txt_r5">subsenses: the bread or wafer used in the Eucharist</string>
+    <string name="txt_r6">lexicalCategory: Noun</string>
+    <string name="txtr_10">definitons: having or showing a modest or low estimate of ones importance</string>
+    <string name="txt_r8">subsenses: (of an action or thought) offered with or affected by a modest estimate of ones importance</string>
+    <string name="txt_r9">lexicalCategory: Verb</string>
 </resources>

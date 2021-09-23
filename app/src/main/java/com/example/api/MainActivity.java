@@ -1,5 +1,6 @@
 package com.example.api;
 
+import androidx.annotation.MainThread;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,12 +11,15 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.google.android.gms.common.api.Api;
 
 import java.util.List;
 
@@ -25,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private Sensor mySensor;
     private SensorManager SM;
 
-    Button btn_search,btn_add,btn_all,btn_oxford;
+    Button btn_search,btn_add,btn_all,btn_oxford,btnother;
     EditText editWord;
     String url;
     ListView list;
@@ -38,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         setContentView(R.layout.activity_main);
         db = new DataBaseHelper(this);
 
+        btnother = findViewById(R.id.btnOther);
         btn_all = findViewById(R.id.btnAll);
         btn_search = findViewById(R.id.btnSearch);
         btn_add = findViewById(R.id.btnView);
@@ -53,6 +58,20 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 db.addData(cm);
 
                 Toast.makeText(getBaseContext(), "Resultado salvo com sucesso no Banco de Dados", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btnother.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                Intent intent = new Intent(MainActivity.this, ApiResult.class);
+                startActivity(intent);
+
             }
         });
 
